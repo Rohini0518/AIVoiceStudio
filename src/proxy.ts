@@ -1,10 +1,8 @@
-import { NextResponse } from "next/server";
-import type { NextRequest } from "next/server";
+import { clerkMiddleware } from "@clerk/nextjs/server";
 
-export function proxy(request: NextRequest) {
-  return NextResponse.next();
-}
-
+export default clerkMiddleware((auth, req) => {
+  console.log("✅ Proxy is running:", req.nextUrl.pathname);
+});
 export const config = {
   matcher: ["/:path*"],
 };
