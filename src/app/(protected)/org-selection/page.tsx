@@ -1,3 +1,4 @@
+import { OrganizationList } from "@clerk/nextjs";
 import { auth } from "@clerk/nextjs/server";
 
 export default async function OrgSelectionPage() {
@@ -7,6 +8,11 @@ export default async function OrgSelectionPage() {
   return (
     <div>
       <h1>Organization Selection</h1>
+      <OrganizationList 
+      hidePersonal
+      afterCreateOrganizationUrl="/"
+      afterSelectOrganizationUrl="/"
+      />
     </div>
   );
 }
