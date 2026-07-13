@@ -63,7 +63,7 @@ export default function Home() {
 
           <div className="mt-8 rounded-xl border border-violet-700/50 bg-violet-600/80 p-5">
             <p className="text-center text-sm text-white">
-              💡 <strong>Tip:</strong> If you're working with different clients
+              💡 <strong>Tip:</strong> If youre working with different clients
               or teams, create separate organizations to keep projects,
               collaborators, and voice assets organized.
             </p>
