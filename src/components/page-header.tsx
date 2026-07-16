@@ -27,6 +27,7 @@ export function PageHeader({
         <Button
           variant="outline"
           size="sm"
+          nativeButton={false}
           render={<Link href="mailto:rohini@gmail.com" />}
         >
           <ThumbsUp />
@@ -35,6 +36,7 @@ export function PageHeader({
         <Button
           variant="outline"
           size="sm"
+          nativeButton={false}
           render={<Link href="mailto:rohini@gmail.com" />}
         >
           <ThumbsUp />
