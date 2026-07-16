@@ -39,6 +39,7 @@ export function QuickActionCard({
         <Button
           variant="outline"
           size="sm"
+          nativeButton={false}
           className="w-fit"
           render={<Link href={href} />}
         >
